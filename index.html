@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Portfólio pessoal (Currículo Online) - Jonas Luís de Oliveira Santos
+     Atividade Prática - Fundamentos da Programação Web (UNINTER)
+     Modelo escolhido: Single Page Website com navegação por âncoras -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: faz o layout se adaptar à largura de celulares e tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo online de Jonas Luís, corretor de imóveis, avaliador imobiliário e gestor de marketing em Goiânia-GO.">
+  <title>Jonas Luís | Portfólio</title>
+  <!-- CSS externo (sem frameworks) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO E MENU (fixo no topo, visível em todas as seções) ===== -->
+  <header class="topo">
+    <a href="#sobre" class="logo">Jonas<span>Luís</span></a>
+
+    <!-- Botão "hambúrguer": só aparece no celular e abre/fecha o menu via JavaScript -->
+    <button class="btn-menu" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="menu" class="menu">
+      <!-- Links por âncora: levam à seção correspondente sem recarregar a página -->
+      <a href="#sobre">Sobre mim</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+      <!-- Botão que alterna entre tema claro e escuro (script.js) -->
+      <button class="btn-tema" id="btnTema" aria-label="Alternar tema claro/escuro" title="Alternar tema">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== SEÇÃO 1: SOBRE MIM ===== -->
+    <section id="sobre" class="secao">
+      <div class="sobre-grid">
+        <img src="img/foto.jpg" alt="Foto de Jonas Luís" class="foto" width="348" height="348">
+        <div>
+          <p class="sobretitulo">Olá, eu sou</p>
+          <h1>Jonas Luís de Oliveira Santos</h1>
+          <p class="cargo">Corretor de Imóveis, Avaliador Imobiliário &amp; Gestor de Marketing</p>
+          <p>
+            Atuo no mercado imobiliário de Goiânia e região desde 2015. Hoje trabalho na
+            <strong>R8 Imóveis</strong> com intermediação de compra, venda e locação, com
+            avaliações mercadológicas de imóveis urbanos e residenciais e na gestão do
+            marketing da imobiliária. Meu objetivo é atuar
+            como <strong>Perito Avaliador de Imóveis</strong>, unindo a experiência de campo
+            à análise de dados.
+          </p>
+          <!-- Lista de dados rápidos -->
+          <ul class="tags">
+            <li>CRECI/GO 26.442</li>
+            <li>CNAI 57.879</li>
+            <li>Goiânia - GO</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cards-3">
+        <article class="card">
+          <h2>Experiência</h2>
+          <!-- Linha do tempo profissional (resumo do currículo) -->
+          <ul class="linha-tempo">
+            <li><strong>R8 Imóveis</strong> - Gestor de Marketing <span>09/2025 - atual</span></li>
+            <li><strong>R8 Imóveis</strong> - Corretor / Avaliador Imobiliário <span>03/2024 - atual</span></li>
+            <li><strong>R8 Imóveis</strong> - Corretor de Imóveis <span>03/2023 - 03/2024</span></li>
+            <li><strong>Polo Imóveis</strong> - Diretor de Vendas <span>2018-2019 | 2022</span></li>
+            <li><strong>Polo Imóveis</strong> - Gerente de Vendas <span>2016-2017 | 2019-2022</span></li>
+            <li><strong>Polo Imóveis</strong> - Corretor de Imóveis <span>2015-2016 | 2022-2023</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Habilidades</h2>
+          <ul class="lista">
+            <li>Avaliação mercadológica de imóveis</li>
+            <li>Análise comparativa de mercado</li>
+            <li>Vistoria e levantamento de características</li>
+            <li>Parecer técnico de avaliação</li>
+            <li>Negociação e gestão de equipes comerciais</li>
+            <li>Marketing imobiliário e captação de leads</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Hobbies e interesses</h2>
+          <ul class="lista">
+            <li>Tecnologia e análise de dados</li>
+            <li>Criação de vídeos e artes para divulgação de imóveis</li>
+            <li>Conhecer novos empreendimentos e bairros da cidade</li>
+            <li>Filmes e séries</li>
+            <li>Viagens</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 2: FORMAÇÃO ===== -->
+    <section id="formacao" class="secao">
+      <h2 class="titulo-secao">Formação</h2>
+      <div class="cards-3">
+        <article class="card">
+          <span class="selo andamento">Cursando</span>
+          <h3>Tecnologia em Ciência de Dados</h3>
+          <p>UNINTER - graduação tecnológica a distância.</p>
+        </article>
+        <article class="card">
+          <span class="selo">Concluído 05/2026</span>
+          <h3>Avaliação e Perícia de Imóveis</h3>
+          <p>CRECI 5ª Região / GO - habilitação para o Cadastro Nacional de Avaliadores Imobiliários (CNAI).</p>
+        </article>
+        <article class="card">
+          <span class="selo">Concluído 08/2015</span>
+          <h3>Técnico em Transações Imobiliárias (TTI)</h3>
+          <p>Instituto da Consciência - base para o registro como corretor no CRECI/GO.</p>
+        </article>
+      </div>
+
+      <!-- Tabela de idiomas -->
+      <h3 class="subtitulo">Idiomas</h3>
+      <table class="tabela">
+        <thead><tr><th>Idioma</th><th>Nível</th></tr></thead>
+        <tbody>
+          <tr><td>Português</td><td>Nativo</td></tr>
+          <tr><td>Inglês</td><td>Básico</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== SEÇÃO 3: PORTFÓLIO ===== -->
+    <section id="portfolio" class="secao">
+      <h2 class="titulo-secao">Portfólio</h2>
+      <p class="intro">Alguns trabalhos que produzi como gestor de marketing da R8 Imóveis. Clique para ver em tamanho real.</p>
+
+      <!-- Botões de filtro: o JavaScript mostra/esconde os cards pela categoria -->
+      <div class="filtros" id="filtros">
+        <button class="ativo" data-filtro="todos">Todos</button>
+        <button data-filtro="arte">Artes</button>
+        <button data-filtro="video">Vídeos</button>
+        <button data-filtro="ferramenta">Ferramentas</button>
+      </div>
+
+      <div class="galeria">
+        <a class="trabalho" data-categoria="arte" href="img/sobrado.jpg" target="_blank" rel="noopener">
+          <img src="img/sobrado.jpg" alt="Arte de divulgação do Sobrado Jardins Lyon" loading="lazy">
+          <div><h3>Sobrado Jardins Lyon</h3><p>Arte de anúncio com preço, metragem e condições de pagamento.</p></div>
+        </a>
+        <a class="trabalho" data-categoria="arte" href="img/ora-campanha.jpg" target="_blank" rel="noopener">
+          <img src="img/ora-campanha.jpg" alt="Capa da campanha do lançamento Óra Vaca Brava" loading="lazy">
+          <div><h3>Campanha Óra Vaca Brava</h3><p>Capa do formulário de captação de leads do lançamento no Setor Bueno.</p></div>
+        </a>
+        <a class="trabalho" data-categoria="ferramenta" href="img/simulador.jpg" target="_blank" rel="noopener">
+          <img src="img/simulador.jpg" alt="Simulador de pagamento do Óra em euros" loading="lazy" class="vertical">
+          <div><h3>Simulador de pagamento Óra</h3><p>Tabelas por unidade em reais, dólares e euros para investidores estrangeiros.</p></div>
+        </a>
+        <a class="trabalho" data-categoria="video" href="img/lumiar.jpg" target="_blank" rel="noopener">
+          <img src="img/lumiar.jpg" alt="Cena do teaser do empreendimento Fazenda Lumiar" loading="lazy">
+          <div><h3>Teaser Fazenda Lumiar</h3><p>Vídeo de apresentação do empreendimento, nas versões horizontal e vertical.</p></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== SEÇÃO 4: CONTATO ===== -->
+    <section id="contato" class="secao">
+      <h2 class="titulo-secao">Contato</h2>
+      <p class="intro">Precisa avaliar, comprar ou vender um imóvel? Mande uma mensagem.</p>
+
+      <!-- novalidate: desliga a validação nativa para que o JavaScript faça a validação -->
+      <form id="formContato" class="formulario" novalidate>
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          <small class="erro" id="erroNome"></small>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+          <small class="erro" id="erroEmail"></small>
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+          <small class="erro" id="erroMensagem"></small>
+        </div>
+        <button type="submit" class="btn">Enviar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; <span id="ano"></span> Jonas Luís de Oliveira Santos - feito com HTML5, CSS3 e JavaScript puro.</p>
+  </footer>
+
+  <!-- Caixa modal de confirmação (aparece após o envio simulado) -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" hidden>
+    <div class="modal-caixa">
+      <h3 id="modalTitulo">Mensagem enviada com sucesso!</h3>
+      <p id="modalTexto">Obrigado pelo contato. Responderei em breve.</p>
+      <button class="btn" id="btnFecharModal">Fechar</button>
+    </div>
+  </div>
+
+  <!-- JavaScript no final do body: o HTML já está carregado quando o script roda -->
+  <script src="js/script.js"></script>
+</body>
+</html>
